@@ -31,3 +31,19 @@ An end-to-end neural network-based system that directly translates spoken German
 ├── app.py             # Main app interface
 ├── requirements.txt   # Required libraries
 └── README.md
+
+
+# Record speech input (5 seconds)
+record_audio("input_audio.wav", duration=5)
+
+# Recognize English speech
+recognized_text = recognize_speech("input_audio.wav")
+print("You said:", recognized_text)
+
+# Translate text to target language (e.g., Spanish)
+translated = translate_text(recognized_text, "es")
+print("Translated text:", translated)
+
+# Convert translated text to speech and play it
+text_to_speech(translated, "es")
+replay_audio()
