@@ -28,7 +28,7 @@ An end-to-end neural network-based system that directly translates spoken German
 ├── data/              # Preprocessed audio data
 ├── model/             # Training scripts and saved models
 ├── utils/             # Feature extraction, reconstruction tools
-├── app.py             # Main app interface
+├── app.py             # Main app interface  
 ├── requirements.txt   # Required libraries
 └── README.md
 
